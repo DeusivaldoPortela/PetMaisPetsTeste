@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/cadastro.css"> <!-- Conecte ao CSS -->
+</head>
+<body>
+  <header>
+    
+    <div class="logo-container">
+      <img src="./img/logo.webp" alt="Minha Loja" class="logo">
+      <h1>Petshop Pet Mais Pets : Cadastro de Clientes</h1>
+    </div>
+  </header>
+
+  <main>
+   
+    <form action="enviar_cadastro.php" method="POST" class="form-cadastro">
+      <div class="container-pegada">
+        <div class="pegada">
+          <!-- Adicione aqui suas pegadas ou elementos -->
+          <img src="./img/Pegadas.ico" alt="Pegadas" />
+        </div>
+      </div>
+      
+      <h1 class="Tily">
+        Seja Nosso Cliente e Ganhe descontos especiais em nosso app.
+        <img src="./img/Presente.ico" alt="Presente" class="icon-presente">
+      </h1>
+      
+      
+      <h2 class="Tily2">Cadastre-se agora!</h2>
+      <!-- Campo Nome -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+        </div>
+      </div>
+
+      <!-- CEP e Número -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="CEP">CEP</label>
+          <input type="text" id="CEP" name="CEP" required placeholder="Digite seu CEP" maxlength="8">
+        </div>
+        <div class="form-group">
+          <label for="Numero">N°</label>
+          <input type="text" id="Numero" name="Numero" required placeholder="Número da residência">
+        </div>
+      </div>
+
+      <!-- Endereço e Bairro -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" required placeholder="Digite seu endereço">
+        </div>
+        <div class="form-group">
+          <label for="Bairro">Bairro</label>
+          <input type="text" id="Bairro" name="Bairro" required placeholder="Digite seu Bairro">
+        </div>
+      </div>
+
+      <!-- Cidade e E-mail -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="Cidade">Cidade</label>
+          <input type="text" id="Cidade" name="Cidade" required placeholder="Digite sua cidade">
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+        </div>
+      </div>
+
+      <!-- Telefone -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+        </div>
+      </div>
+
+      <!-- Botão de Enviar -->
+      <div class="form-row">
+        <button type="submit" class="btn-submit">Cadastrar</button>
+      </div>
+      
+    </form>
+    
+  </main>
+  
+ 
+    
+
+  <footer>
+    <p>© 2024 Pet Mais Pets</p>
+  </footer>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>
